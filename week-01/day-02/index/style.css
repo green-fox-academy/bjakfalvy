@@ -1,0 +1,63 @@
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    }
+img {
+    width:100%;
+}
+ p {
+    font-family: "medium-content-serif-font";
+    font-size: 21px;
+    font-weight: 400;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h2 {
+    text-align: center;
+    color: rgba(0,0,0, 0.55);
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+            /* ez egy comment a css-ben*/
+h1, h2{
+    font-family: "medium-content-slab-serif-font";
+    text-align: center;
+}
+@font-face {
+  font-family: 'medium-content-slab-serif-font';
+  font-weight: 300;
+  font-style: italic;
+  src: url('medium-content-slab-serif-font') format('woff');
+  unicode-range: U+0-7F,U+A0,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
+}
+
+@font-face {
+  font-family: 'medium-content-serif-font';
+  font-weight: 400;
+  font-style: italic;
+  src: url("charter-400-italic.woff") format('woff');
+  unicode-range: U+0-7F,U+A0,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
+}
+
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.blue {
+    background: blue;
+}
+.red, .green, .blue {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}

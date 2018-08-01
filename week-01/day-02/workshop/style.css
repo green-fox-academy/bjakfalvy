@@ -1,0 +1,28 @@
+body {
+    padding: 10%;
+    background-image: url(topography.png);
+    background-repeat:repeat;
+}
+h1 {
+    font-family: "Raleway-Regular.ttf";
+    font-size: 50px;
+}
+h2 {
+    font-size: 25px;
+    color: #ff0099;
+    font-family: "Raleway-Regular.ttf";
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a {
+    text-align: right;
+}
+
+@font-face {
+    font-family: "Raleway-Regular.ttf";
+    font-weight: 400;
+    src: url("Raleway-Regular.ttf") format('ttf');
