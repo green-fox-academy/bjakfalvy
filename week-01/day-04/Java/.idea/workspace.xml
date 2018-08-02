@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="289fe4ff-8c30-47e8-93db-c4469e82bf0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SecondsInADay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HelloUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MileToKmConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,42 +55,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="168" />
+          <entry key="java" value="959" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="168" />
+          <entry key="JAVA" value="959" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/VariableMutation.java">
+        <entry file="file://$PROJECT_DIR$/src/HelloUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
+            <state relative-caret-position="165">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SecondsInADay.java">
+        <entry file="file://$PROJECT_DIR$/src/MileToKmConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -122,6 +125,8 @@
         <option value="$PROJECT_DIR$/src/DefineBasicInfo.java" />
         <option value="$PROJECT_DIR$/src/VariableMutation.java" />
         <option value="$PROJECT_DIR$/src/SecondsInADay.java" />
+        <option value="$PROJECT_DIR$/src/HelloUser.java" />
+        <option value="$PROJECT_DIR$/src/MileToKmConverter.java" />
       </list>
     </option>
   </component>
@@ -132,10 +137,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="765" />
+    <option name="x" value="454" />
+    <option name="y" value="23" />
+    <option name="width" value="976" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -169,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533213195892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533217825271" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -185,16 +190,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SecondsInADay">
-    <configuration name="CodingHours" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodingHours" />
+  <component name="RunManager" selected="Application.MileToKmConverter">
+    <configuration name="DefineBasicInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DefineBasicInfo" />
       <module name="Java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FavoriteNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FavoriteNumber" />
+    <configuration name="HelloUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloUser" />
+      <module name="Java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MileToKmConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MileToKmConverter" />
       <module name="Java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,13 +214,6 @@
     </configuration>
     <configuration name="SecondsInADay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SecondsInADay" />
-      <module name="Java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Swap" />
       <module name="Java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,19 +227,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CodingHours" />
-      <item itemvalue="Application.FavoriteNumber" />
-      <item itemvalue="Application.Swap" />
       <item itemvalue="Application.VariableMutation" />
       <item itemvalue="Application.SecondsInADay" />
+      <item itemvalue="Application.HelloUser" />
+      <item itemvalue="Application.DefineBasicInfo" />
+      <item itemvalue="Application.MileToKmConverter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MileToKmConverter" />
+        <item itemvalue="Application.HelloUser" />
+        <item itemvalue="Application.DefineBasicInfo" />
         <item itemvalue="Application.SecondsInADay" />
         <item itemvalue="Application.VariableMutation" />
-        <item itemvalue="Application.Swap" />
-        <item itemvalue="Application.FavoriteNumber" />
-        <item itemvalue="Application.CodingHours" />
       </list>
     </recent_temporary>
   </component>
@@ -249,19 +254,19 @@
       <option name="presentableId" value="Default" />
       <updated>1533195250472</updated>
       <workItem from="1533195255475" duration="10741000" />
-      <workItem from="1533212604292" duration="543000" />
+      <workItem from="1533212604292" duration="4377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11284000" />
+    <option name="totallyTimeSpent" value="15118000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="765" extended-state="0" />
+    <frame x="454" y="23" width="976" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49667406" visible="true" weight="0.2533137" />
-      <window_info id="Structure" order="1" sideWeight="0.50332594" side_tool="true" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49638554" visible="true" weight="0.23768736" />
+      <window_info id="Structure" order="1" sideWeight="0.5036145" side_tool="true" visible="true" weight="0.23768736" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -269,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32986626" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34850863" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -278,7 +283,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32986626" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3265306" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -353,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DefineBasicInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VariableMutation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -369,8 +367,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SecondsInADay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DefineBasicInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MileToKmConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
