@@ -13,7 +13,7 @@ public class Greet {
     }
 
     public static String greet(String al) {
-        String greet = "Greetings dear, " + al;
-        return greet;
+
+        return "Greetings dear, " + al;
     }
 }
