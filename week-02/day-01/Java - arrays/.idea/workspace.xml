@@ -133,7 +133,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533566976054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533567148031" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -149,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrintParams">
+  <component name="RunManager" selected="Application.Third">
     <configuration name="AppendAFunc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppendAFunc" />
       <module name="Java - arrays" />
@@ -159,13 +159,6 @@
     </configuration>
     <configuration name="Factorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Factorio" />
-      <module name="Java - arrays" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Greet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Greet" />
       <module name="Java - arrays" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,20 +178,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Third" />
+      <module name="Java - arrays" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Greet" />
       <item itemvalue="Application.AppendAFunc" />
       <item itemvalue="Application.Summing" />
       <item itemvalue="Application.Factorio" />
       <item itemvalue="Application.PrintParams" />
+      <item itemvalue="Application.Third" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Third" />
         <item itemvalue="Application.PrintParams" />
         <item itemvalue="Application.Factorio" />
         <item itemvalue="Application.Summing" />
         <item itemvalue="Application.AppendAFunc" />
-        <item itemvalue="Application.Greet" />
       </list>
     </recent_temporary>
   </component>
