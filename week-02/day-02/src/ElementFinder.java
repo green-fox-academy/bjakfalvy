@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Main{
+public class ElementFinder {
     public static void main(String... args){
         ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         System.out.println(containsSeven(arrayList));
@@ -10,9 +10,8 @@ public class Main{
         // Do this again with a different solution using different list methods!
 
     }
-    public static String containsSeven(ArrayList<Integer> arrayList){
-        if (arrayList.contains(7)) return "Hoorray";
-        else return "Nooooo";
+    public static String containsSeven(ArrayList<Integer> lista) {
+    if (lista.contains(7)) return "Hoorray";
+    else return "Nooooo";
     }
-
 }
