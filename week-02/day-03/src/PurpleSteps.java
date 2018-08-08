@@ -4,20 +4,19 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class GoToCenter {
+public class PurpleSteps {
     public static void mainDraw(Graphics graphics) {
-        // Create a line drawing function that takes 2 parameters:
-        // The x and y coordinates of the line's starting point
-        // and draws a line from that point to the center of the canvas.
-        // Draw 3 lines with that function. Use loop for that.
+        // Reproduce this:
+        // [https://github.com/green-fox-academy/teaching-materials/blob/master/workshop/drawing/purple-steps/r3.png]
 
-        for (int i = 0; i < 3; i++){
-            coordinates(graphics, 23 + (i*50), 15 + (i *25));
+        for( int i = 0; i < 15; i++){
+            graphics.setColor(Color.magenta);
+            graphics.fillRect(10 + (i*20), 10+ (i*20), 20,20);
+            graphics.setColor(Color.black);
+            graphics.drawRect(10 + (i*20), 10+ (i*20), 20,20);
         }
-    }
-    public static void coordinates(Graphics graphics, int a, int b){
 
-        graphics.drawLine(a,b,WIDTH/2, HEIGHT/2);
+
     }
 
     // Don't touch the code below
@@ -40,5 +39,4 @@ public class GoToCenter {
             mainDraw(graphics);
         }
     }
-
 }
