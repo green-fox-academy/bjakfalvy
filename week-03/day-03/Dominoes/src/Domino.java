@@ -12,7 +12,7 @@ import java.util.Arrays;
     }
 
     @Override
-     String toString() {
+    public String toString() {
         return "[" + values[0] + ", " + values[1] + "]";
     }
 }
