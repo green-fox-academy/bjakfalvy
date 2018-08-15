@@ -34,14 +34,7 @@ public class DiceSet {
     }
 
     public static void main(String[] args) {
-        DiceSet diceSet = new Dice();
-        diceSet.getCurrent();
-        diceSet.roll();
-        diceSet.getCurrent();
-        diceSet.getCurrent(5);
-        diceSet.reroll();
-        diceSet.getCurrent();
-        diceSet.reroll(4);
-        diceSet.getCurrent();
+        DiceSet diceSet = new DiceSet();
+
     }
 }
