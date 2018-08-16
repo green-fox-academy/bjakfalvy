@@ -4,7 +4,7 @@ public class Car {
 
     public void Car(){
         Car car = new Car();
-        gasAmount = 0;
-        capacity = 100;
+        this.gasAmount = 0;
+        this.capacity = 100;
     }
 }

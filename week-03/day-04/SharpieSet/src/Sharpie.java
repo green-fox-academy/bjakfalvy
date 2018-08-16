@@ -3,15 +3,14 @@ public class Sharpie {
     float width;
     float inkAmount = 100;
 
-    void creatSharpie(String color, float width) {
+    public Sharpie(String color, float width) {
         this.color = color;
         this.width = width;
         this.inkAmount = 100;
 
     }
 
-    void use() {
+    public void use() {
         this.inkAmount = inkAmount - 1;
     }
-
 }
