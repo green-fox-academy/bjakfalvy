@@ -42,5 +42,7 @@ public class Main {
         awesome.addMentor(mentor);
         awesome.addMentor(gandhi);
         awesome.info();
+
+
     }
 }
