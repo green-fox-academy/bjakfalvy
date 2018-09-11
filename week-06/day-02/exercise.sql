@@ -259,3 +259,10 @@ SELECT * FROM newpublisher;
 SELECT * FROM `order`;
 SELECT * FROM publisher;
 SELECT * FROM purchase;
+
+SELECT book_mast.book_name, aut_name, cate_descrip, pub_name, book_price
+FROM book_mast
+INNER JOIN author ON author.aut_id = book_mast.aut_id
+INNER JOIN category ON category.cate_id = book_mast.cate_id
+INNER JOIN publisher ON publisher.pub_id = book_mast.pub_id
+INNER JOIN purchase ON purchase.book_id = book_mast.book_id;
