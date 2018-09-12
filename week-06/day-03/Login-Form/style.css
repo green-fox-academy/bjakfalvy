@@ -1,0 +1,57 @@
+fieldset{
+    padding: 100px;
+    margin: 450px;
+    border: 0px;
+    background-color: white;
+    color: grey;
+    text-align: left;
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 2px;
+}
+body {
+    background-color: lightgrey;
+}
+h1{
+    font-weight: normal;
+    font-size: 30px;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"]{
+    margin-top: 15px;
+    background: url("open.eye.png") no-repeat;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    color: grey;
+}
+input[type="password"]{
+    background-size: 20px;
+    background-position: 175px;
+}
+button{
+    background-color: rgb(51,51,51);
+    color: white;
+    border-radius: 25px;
+    width: 110px;
+    height: 45px;
+    padding: 10px;
+    border: 0;
+    font-size: 15px;
+    text-align: center;
+}
+span{
+    text-align: right;
+    font-size: 14px;
+
+}
+input:focus {
+    outline: none !important;
+    border:1px solid darkseagreen;
+    box-shadow: 0 0 2px darkseagreen;
+}
