@@ -6,8 +6,32 @@
     <meta charset="utf-8"/>
 </head>
 <body>
-<th:block th:each="element : ${accountList}">
-    <li th:text="|${elementStat.index} ${element.name} ${element.balance} Zebra, ${element.animalType}|"></li>
-</th:block>
+<table>
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>Type</th>
+        <th>Is king?</th>
+    </tr>
+    <tbody>
+    <th:block th:each="element : ${accountList}">
+        <tr th:if="${element.king}" class="king">
+            <td th:text="${elementStat.index}"></td>
+            <td th:text="${element.name}"></td>
+            <td th:text="${#numbers.formatDecimal(element.balance, 1,2)}"></td>
+            <td th:text="${element.animalType}"></td>
+            <td th:text="${element.isKing()}"></td>
+        </tr>
+        <tr th:unless="${element.king}">
+            <td th:text="${elementStat.index}"></td>
+            <td th:text="${element.name}"></td>
+            <td th:text="${#numbers.formatDecimal(element.balance, 1,2)}"></td>
+            <td th:text="${element.animalType}"></td>
+            <td th:text="${element.isKing()}"></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
 </body>
 </html>
