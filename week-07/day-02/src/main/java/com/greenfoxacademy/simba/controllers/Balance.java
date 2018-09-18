@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Balance {
 
     @RequestMapping("/balance")
-    public String balance(Model model){
+    public String balance(Model model) {
         model.addAttribute("account", new BankAccount("Simba", 2000, "lion"));
         return "balance";
     }
