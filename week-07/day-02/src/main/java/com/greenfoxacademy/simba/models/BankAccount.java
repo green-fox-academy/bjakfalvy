@@ -9,10 +9,6 @@ public class BankAccount {
     private double balance;
     private String animalType;
 
-   public BankAccount(){
-
-    }
-
     public BankAccount(String name, double balance, String animalType){
         this.name = name;
         this.balance = balance;
