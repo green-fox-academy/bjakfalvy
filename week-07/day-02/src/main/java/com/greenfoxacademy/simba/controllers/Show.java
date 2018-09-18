@@ -16,4 +16,10 @@ public class Show {
             model.addAttribute("account", new BankAccount("Simba", 2000, "lion"));
             return "index";
     }
+
+    @RequestMapping("/balance")
+    public String format(Model model){
+        model.addAttribute("account", new BankAccount("Simba", 2000, "lion"));
+        return "balance";
+    }
 }

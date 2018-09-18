@@ -1,15 +1,19 @@
 package com.greenfoxacademy.simba.models;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class BankAccount {
     private String name;
-    private int balance;
+    private double balance;
     private String animalType;
 
    public BankAccount(){
 
     }
 
-    public BankAccount(String name, int balance, String animalType){
+    public BankAccount(String name, double balance, String animalType){
         this.name = name;
         this.balance = balance;
         this.animalType = animalType;
@@ -23,11 +27,11 @@ public class BankAccount {
         this.name = name;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
