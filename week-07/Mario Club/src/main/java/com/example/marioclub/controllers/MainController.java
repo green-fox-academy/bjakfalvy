@@ -25,7 +25,7 @@ public class MainController {
                 + Character.findMario(name).getFood()
                 + " and " + Character.findMario(name).getDrink()
                 + ". He knows " + Character.findMario(name).getTrickCounter() + " tricks.");
-        model.addAttribute("tricks", Character.findMario(name).getListOfTricks());
+        model.addAttribute("tricks", Character.findMario(name).getTricks());
         return "index";
     }
 

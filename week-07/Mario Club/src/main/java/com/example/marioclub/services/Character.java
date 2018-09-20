@@ -8,17 +8,17 @@ import java.util.List;
 
 @Service
 public class Character {
-    private List<Mario> marioList;
+    private static List<Mario> marioList;
 
     public Character(){
         this.marioList = new ArrayList<>();
     }
 
-    public void register(String name) {
+    public static void register(String name) {
         marioList.add(new Mario(name));
     }
 
-    public Mario findMario(String name) {
+    public static Mario findMario(String name) {
         for (Mario listOfMarios : marioList) {
             if (listOfMarios.getName().equals(name)) {
                 return listOfMarios;
@@ -27,7 +27,7 @@ public class Character {
         return null;
     }
 
-    public Mario login(String name) {
+    public static Mario login(String name) {
         if (findMario(name) == null) {
             register(name);
         }
