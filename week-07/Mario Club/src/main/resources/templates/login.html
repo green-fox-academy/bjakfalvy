@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Welcome to Mario Club</h1>
+    <p>Please provide a name, so you can associate to your character!</p>
+    <form action="/" th:action="@{/}" method="post">
+        <div>Enter a name
+            <br><input type="text" name="Name"><br>
+            <input type="submit" value="GO">
+        </div>
+    </form>
+</body>
+</html>
