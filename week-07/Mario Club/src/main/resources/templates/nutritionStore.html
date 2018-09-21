@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <title>Nutrition Store</title>
+</head>
+<body>
+<a href="">Information<br></a>
+<a href="">Nutrition Store<br></a>
+<a href="">Trick Center<br></a>
+<div>Select your food:
+    <form th:action="@{'/nutritionstore?name='+ ${mario.getName()}}" method="post" th:object="${mario}">
+        <select th:field="*{food}">
+            <option th:each="item : ${foodlist}" th:value="${item}">
+                <span th:text="${item}"></span>
+            </option>
+        </select>
+        And your drink too:
+        <select th:field="*{drink}">
+            <option th:each="item : ${drinklist}" th:value="${item}">
+                <span th:text="${item}"></span>
+            </option>
+        </select>
+        <input type="submit" value="Change">
+    </form>
+</div>
+</body>
+</html>

@@ -15,7 +15,7 @@ public class Mario {
     }
 
     public Mario(String name) {
-        if (getName() == "Mr. Green") {
+        if (name.equals("Mario") ) {
             this.name = name;
             this.food = "salad";
             this.drink = "water";
