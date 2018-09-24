@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class PokerTest {
 
@@ -35,11 +35,11 @@ public class PokerTest {
         white.add(card9);
         white.add(card10);
 
-         assertEquals("White wins!",pokerGame.whiteWins(black, white));
-}
+        assertEquals("White wins!", pokerGame.whiteWins(black, white));
+    }
 
     @Test
-    public void flushTest(){
+    public void flushTest() {
         ArrayList<Card> black = new ArrayList<Card>(5);
         Card card1 = new Card("H", 2);
         Card card2 = new Card("S", 3);
@@ -93,7 +93,7 @@ public class PokerTest {
         white.add(card9);
         white.add(card10);
 
-        assertEquals("Black wins!",pokerGame.isHighCard(black));
+        assertEquals("Black wins!", pokerGame.isHighCard(black));
     }
 
     @Test
@@ -122,7 +122,7 @@ public class PokerTest {
         white.add(card9);
         white.add(card10);
 
-        assertEquals("Tie",pokerGame.isTie(black,white));
+        assertEquals("Tie", pokerGame.isTie(black, white));
     }
 
 
