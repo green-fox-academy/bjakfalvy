@@ -1,22 +1,71 @@
 table {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    width: 90%;
+    border-radius: 3px;
     border-collapse: collapse;
-    font-family: "Courier New";
-    font-size: 25px;
-    width: 750px;
+    border-spacing: 10px;
 }
 
-thead{
-    font-family: Times;
-    background: cornflowerblue;
-    color: white;
+h2 {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+}
+
+.field, .button {
     text-align-all: center;
+    width: 300px;
+    font-size: large;
 }
 
-td {
+.button {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 100px;
+}
+
+table, th, td {
+    color: grey;
+    font-size: 30px;
+    font-weight: 400;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+tr {
+    color: #666B85;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+tr:nth-child(even) {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-weight: normal;
+    background-color: #EBEBEB;
+
+}
+
+tr:nth-child(odd) {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-weight: normal;
+    background-color: ghostwhite;
+}
+
+th {
+    color: azure;;
+    background: #1b1e24;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 24px;
     text-align: left;
-    background-color: lightpink;
+    vertical-align: middle;
 }
 
-table, th, td{
-    border: 1px solid darkgray;
+body {
+    background-color: #3e94ec;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }

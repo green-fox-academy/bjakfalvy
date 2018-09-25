@@ -28,18 +28,18 @@ public class todoController {
     }
 
     @GetMapping("/todo/add")
-    public String get(){
+    public String get() {
         return "todoadd";
     }
 
     @PostMapping("/todo/add")
-    public String post(String title){
+    public String post(String title) {
         todoRepository.save(new Todo(title));
         return "redirect:/todo";
     }
 
     @GetMapping("/{id}/delete")
-    public String delete(@PathVariable Long id){
+    public String delete(@PathVariable Long id) {
         todoRepository.deleteById(id);
         return "redirect:/todo";
     }
