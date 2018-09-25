@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    font-family: "Courier New";
+    font-size: 25px;
+    width: 750px;
+}
+
+thead{
+    font-family: Times;
+    background: cornflowerblue;
+    color: white;
+    text-align-all: center;
+}
+
+td {
+    text-align: left;
+    background-color: lightpink;
+}
+
+table, th, td{
+    border: 1px solid darkgray;
+}
