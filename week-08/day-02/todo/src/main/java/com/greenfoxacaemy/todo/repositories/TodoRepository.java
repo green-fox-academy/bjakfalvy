@@ -1,4 +1,4 @@
-package com.greenfoxacaemy.todo;
+package com.greenfoxacaemy.todo.repositories;
 
 import com.greenfoxacaemy.todo.models.Todo;
 import org.springframework.data.repository.CrudRepository;
