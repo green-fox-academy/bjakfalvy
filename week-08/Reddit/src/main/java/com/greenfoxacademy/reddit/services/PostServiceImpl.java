@@ -9,19 +9,18 @@ public class PostServiceImpl implements PostService {
 
     private PostRepository postRepository;
 
-    public PostServiceImpl (PostRepository postRepository){
+    public PostServiceImpl(PostRepository postRepository) {
         this.postRepository = postRepository;
     }
 
     @Override
     public Iterable<Post> findAll() {
-        return postRepository.findAll();
+        return postRepository.findAllByOrderByPointDesc();
     }
 
     @Override
     public void submitPost(String title, String url) {
-        Post newPost = new Post(title, url);
-        postRepository.save(newPost);
+        postRepository.save(new Post(title, url));
     }
 
     @Override

@@ -1,0 +1,55 @@
+body {
+    text-align-all: center;
+    color: ghostwhite;
+}
+
+h2 {
+    text-align: center;
+    font-family: Rockwell;
+    font-size: 60px;
+}
+
+.home {
+    text-align: center;
+    font-size: medium;
+    font-family: Arial;
+}
+
+table {
+    font-family: Arial;
+    font-size: 22px;
+    width: 60%;
+    margin: 10px auto;
+}
+
+table tr {
+    height: 25px;
+}
+
+div {
+    width: 40%;
+    margin: 10px auto;
+}
+
+input {
+    margin: 4px 0;
+    width: 80%;
+}
+
+button {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    margin: 5px 0;
+}
+
+a{
+    font-family: Arial;
+    color: azure;
+    font-size: 22px;
+}
+
+label {
+    font-family: Arial;
+    font-size: 25px;
+}

@@ -2,18 +2,18 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/styles.css}">
+    <link rel="stylesheet" th:href="@{/style.css}">
     <title>Submit a new post</title>
 </head>
-<body>
+<body background="splash1.jpg">
     <a href="/">Home</a>
     <div id="submit">
-        <h1>Submit a new post</h1>
+        <h1>SUBMIT A NEW POST!</h1><br>
         <form action="/submit" method="post">
-            <label for="title">Title:</label>
+            <label for="title">TITLE:</label><br>
             <input type="text" id="title" name="title" required>
             <br>
-            <label for="url">URL:</label>
+            <label for="url">URL:</label><br>
             <input type="text" id="url" name="url" required>
             <br>
             <button type="submit">Submit</button>

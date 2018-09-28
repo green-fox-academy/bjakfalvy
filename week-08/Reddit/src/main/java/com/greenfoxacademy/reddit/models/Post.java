@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 
 @Entity
 public class Post {
@@ -14,6 +15,7 @@ public class Post {
     private String title;
     private String url;
     private long point;
+    private LocalDateTime createdAt;
 
     @Override
     public String toString() {
@@ -63,5 +65,13 @@ public class Post {
 
     public void setPoint(long point) {
         this.point = point;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 }

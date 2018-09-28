@@ -1,7 +1,6 @@
 package com.greenfoxacademy.reddit.services;
 
 import com.greenfoxacademy.reddit.models.Post;
-import com.greenfoxacademy.reddit.repositories.PostRepository;
 import org.springframework.stereotype.Service;
 
 @Service

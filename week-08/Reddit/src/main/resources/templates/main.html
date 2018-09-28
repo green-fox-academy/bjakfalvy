@@ -2,11 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/styles.css}">
+    <link rel="stylesheet" th:href="@{/style.css}">
     <title>Reddit by Beni</title>
 </head>
-<body>
-    <a href="/submit">Submit a new post!</a>
+<body background="splash.jpg">
+    <a href="/submit" class="home">Submit a new post!</a>
     <h2>Trending posts</h2>
     <table>
         <th:block th:each="post : ${posts}">
@@ -23,6 +23,7 @@
                     </form>
                 </td>
                 <td><a th:text="${post.title}" th:href="${post.url}" target="_blank"></a> </td>
+                <td th:text="${post.createdAt == 0} ? 'unknown date' : ${post.createdAt}"/>
             </tr>
         </th:block>
     </table>
