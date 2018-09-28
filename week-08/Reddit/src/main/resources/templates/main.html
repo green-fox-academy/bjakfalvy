@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/styles.css}">
+    <title>Reddit by Beni</title>
+</head>
+<body>
+    <a href="/submit">Submit a new post!</a>
+    <h2>Trending posts</h2>
+    <table>
+        <th:block th:each="post : ${posts}">
+            <tr>
+                <td th:text="${post.point}" />
+                <td>
+                    <form th:action="@{|/upvote/${post.id}|}" method="post">
+                        <button type="submit"> + </button>
+                    </form>
+                </td>
+                <td>
+                    <form th:action="@{|/downvote/${post.id}|}" method="post">
+                        <button type="submit"> - </button>
+                    </form>
+                </td>
+                <td><a th:text="${post.title}" th:href="${post.url}" target="_blank"></a> </td>
+            </tr>
+        </th:block>
+    </table>
+</body>
+</html>
