@@ -8,7 +8,7 @@ public interface PostService {
 
     Iterable<Post> findAll();
 
-    void submitPost (String title, String url);
+    void submitPost(String title, String url);
 
     void upvote(long id);
 
