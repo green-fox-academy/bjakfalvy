@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class todoController {
+public class TodoController {
 
     private TodoRepository todoRepository;
 
-    public todoController(TodoRepository todoRepository) {
+    public TodoController(TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 
