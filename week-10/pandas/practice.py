@@ -16,5 +16,6 @@ print("\n<<<<<VALUES>>>>>\n")
 print(df.values)
 
 print("<<<<<ITERATING>>>>>")
+print("Writing out all applications by App and Rating")
 for index, row in df.iterrows():
     print(index,row["App"], row["Rating"])
