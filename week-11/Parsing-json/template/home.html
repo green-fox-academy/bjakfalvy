@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+<h1>Weather Widget Using OpenWeather's API</h1>
+<div>
+    <h2>Lowest Temprature: {{lowest_temp['temp_min']}} Celsius</h2>
+    <div>
+        {% if lowest_temp['temp_min']< 10 %}
+        <p>Dress up warm!😨</p>
+        {% else %}
+        <p>You dress up easy!😎</p>
+        {% endif %}
+    </div>
+</div>
+<div>
+    <h2>Highest Temprature: {{highest_temp['temp_max']}} Celsius</h2>
+</div>
+<table>
+    <thead>
+    <th>Date</th>
+    <th>Weather</th>
+    <th>Average temperature</th>
+    <th>Expected min</th>
+    <th>Expected max</th>
+    <th>How does it look like</th>
+    </thead>
+    <tbody>
+    {% for data in forecast_description %}
+    <tr>
+        <td>{{data['date']}}</td>
+        <td>{{data['weather']}}</td>
+        <td>{{data['temp']}}</td>
+        <td>{{data['temp_min']}}</td>
+        <td>{{data['temp_max']}}</td>
+        <td><img src="{{data['icon']}}"></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
