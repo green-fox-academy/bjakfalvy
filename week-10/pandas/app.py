@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 def header(message):
     print('\n'+'<'*50)

@@ -25,9 +25,8 @@
     <th>Date</th>
     <th>Weather</th>
     <th>Average temperature</th>
-    <th>Expected min</th>
     <th>Expected max</th>
-    <th>How does it look like</th>
+    <th>Expected min</th>
     </thead>
     <tbody>
     {% for data in forecast_description %}
@@ -35,9 +34,8 @@
         <td>{{data['date']}}</td>
         <td>{{data['weather']}}</td>
         <td>{{data['temp']}}</td>
-        <td>{{data['temp_min']}}</td>
         <td>{{data['temp_max']}}</td>
-        <td><img src="{{data['icon']}}"></td>
+        <td>{{data['temp_min']}}</td>
     </tr>
     {% endfor %}
     </tbody>
