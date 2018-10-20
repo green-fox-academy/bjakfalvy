@@ -1,6 +1,6 @@
-from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
+from tweepy.streaming import StreamListener
 
 import twitter_credentials
 
@@ -38,6 +38,5 @@ class StdOuListener(StreamListener):
 if __name__ == "__main__":
     hash_tag_list = ["donald trump"]
     fetched_tweets_filename = "tweets.json"
-
     twitter_streamer = TwitterStreamer()
     twitter_streamer.stream_tweets(fetched_tweets_filename, hash_tag_list)
