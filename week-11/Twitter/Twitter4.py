@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from tweepy import API
 from tweepy import Cursor
 from tweepy import OAuthHandler
@@ -109,11 +110,32 @@ if __name__ == '__main__':
     twitter_client = TwitterClient()
     api = twitter_client.get_twitter_client_api()
 
-    tweets = api.user_timeline(screen_name="realDonaldTrump", count=20)
-
-    # print(dir(tweets[0]))
-    # print(tweets[0].id)
-    # print(tweets[0].retweet_count)
+    tweets = api.user_timeline(screen_name="realDonaldTrump", count=200)
 
     df = tweet_analyzer.tweets_to_data_frame(tweets)
-    print(df.head(10))
+
+    # get average length over all tweets
+    print(np.mean(df['length']))
+
+    # number of likes of the most liked tweet
+    print(np.max(df['likes']))
+
+    # number of retweets of the most retweeted tweets
+    print(np.max(df['retweets']))
+
+    # Time Series
+    # time_likes = pd.Series(data=df['likes'].values, index=df['date'])
+    # time_likes.plot(figsize=(16,4), color='r')
+    # plt.show()
+
+    # time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
+    # time_retweets.plot(figsize=(16, 4), color='r')
+    # plt.show()
+
+    time_likes = pd.Series(data=df['likes'].values, index=df['date'])
+    time_likes.plot(figsize=(16, 4), label='likes', legend=True)
+
+    time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
+    time_retweets.plot(figsize=(16, 4), label='retweets', legend=True)
+
+    plt.show()
