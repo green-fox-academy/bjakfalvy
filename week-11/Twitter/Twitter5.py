@@ -1,6 +1,8 @@
-import matplotlib.pyplot as plt
+import re
+
 import numpy as np
 import pandas as pd
+from textblob import TextBlob
 from tweepy import API
 from tweepy import Cursor
 from tweepy import OAuthHandler
@@ -91,6 +93,20 @@ class TwitterListener(StreamListener):
 
 
 class TweetAnalyzer():
+
+    def clean_tweet(self, tweet):
+        return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
+
+    def analyze_sentiment(self, tweet):
+        analysis = TextBlob(self.clean_tweet(tweet))
+
+        if analysis.sentiment.polarity > 0:
+            return 1
+        elif analysis.sentiment.polarity == 0:
+            return 0
+        else:
+            return -1
+
     def tweets_to_data_frame(self, tweets):
         df = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['Tweets'])
 
@@ -113,29 +129,6 @@ if __name__ == '__main__':
     tweets = api.user_timeline(screen_name="realDonaldTrump", count=200)
 
     df = tweet_analyzer.tweets_to_data_frame(tweets)
+    df['sentiment'] = np.array([tweet_analyzer.analyze_sentiment(tweet) for tweet in df['Tweets']])
 
-    # get average length over all tweets
-    print(np.mean(df['length']))
-
-    # number of likes of the most liked tweet
-    print(np.max(df['likes']))
-
-    # number of retweets of the most retweeted tweets
-    print(np.max(df['retweets']))
-
-    # Time Series
-    # time_likes = pd.Series(data=df['likes'].values, index=df['date'])
-    # time_likes.plot(figsize=(16,4), color='r')
-    # plt.show()
-
-    # time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
-    # time_retweets.plot(figsize=(16, 4), color='r')
-    # plt.show()
-
-    time_likes = pd.Series(data=df['likes'].values, index=df['date'])
-    time_likes.plot(figsize=(16, 4), label='likes', legend=True)
-
-    time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
-    time_retweets.plot(figsize=(16, 4), label='retweets', legend=True)
-
-    plt.show()
+    print(df.head(10))
