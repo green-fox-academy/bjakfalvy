@@ -5,6 +5,12 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 
 import twitter_credentials
+import numpy as np
+import pandas as pd
+
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_rows', 400)
+pd.set_option('display.max_columns', 500)
 
 
 # # # # TWITTER CLIENT # # # #
@@ -14,6 +20,9 @@ class TwitterClient():
         self.twitter_client = API(self.auth)
 
         self.twitter_user = twitter_user
+
+    def get_twitter_client_api(self):
+        return self.twitter_client
 
     def get_user_timeline_tweets(self, num_tweets):
         tweets = []
@@ -80,11 +89,31 @@ class TwitterListener(StreamListener):
         print(status)
 
 
+class TweetAnalyzer():
+    def tweets_to_data_frame(self, tweets):
+        df = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['Tweets'])
+
+        df['id'] = np.array([tweet.id for tweet in tweets])
+        df['length'] = np.array([len(tweet.text) for tweet in tweets])
+        df['date'] = np.array([tweet.created_at for tweet in tweets])
+        df['source'] = np.array([tweet.source for tweet in tweets])
+        df['likes'] = np.array([tweet.favorite_count for tweet in tweets])
+        df['retweets'] = np.array([tweet.retweet_count for tweet in tweets])
+
+        return df
+
+
 if __name__ == '__main__':
-    # Authenticate using config.py and connect to Twitter Streaming API.
-    hash_tag_list = ["donald trump"]
-    fetched_tweets_filename = "tweets2.json"
-    twitter_client = TwitterClient('bjakfalvy')
-    print(twitter_client.get_user_timeline_tweets(1))
-    print(twitter_client.get_home_timeline_tweets(1))
-    print(twitter_client.get_friendlist(1))
+    tweet_analyzer = TweetAnalyzer()
+
+    twitter_client = TwitterClient()
+    api = twitter_client.get_twitter_client_api()
+
+    tweets = api.user_timeline(screen_name="realDonaldTrump", count=20)
+
+    # print(dir(tweets[0]))
+    # print(tweets[0].id)
+    # print(tweets[0].retweet_count)
+
+    df = tweet_analyzer.tweets_to_data_frame(tweets)
+    print(df.head(10))
