@@ -35,6 +35,3 @@ for article in soup.find_all('article'):
     csv_writer.writerow([headline, summary, art_src])
 
 csv_file.close()
-
-
-heloooo
